@@ -1,0 +1,17 @@
+body {
+  font-size: 14px;
+}
+
+.myCardHeader {
+  border-left: 5px solid #000;
+  padding: 8px 10px;
+}
+#topNav {
+  -webkit-app-region: drag;
+}
+#topNavButtons {
+  -webkit-app-region: no-drag;
+}
+#brand{
+  -webkit-app-region: no-drag;
+}

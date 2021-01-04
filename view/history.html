@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../content/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../content/fontawesome/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../content/css/myStyle.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top" id="topNav">
+        <a class="navbar-brand" href="#" id="brand">
+            <img src="../content/img/list.png" width="30" height="30" class="d-inline-block align-top">
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <span>Günlük İş Takibi<span>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <div class="btn-group" role="group" aria-label="Basic example" id="topNavButtons">
+                    <button type="button" id="btnGetHistory" class="btn btn-danger btn-sm" title="Geçmiş"><i
+                            class="fas fa-history mr-1 ml-1"></i></button>
+                    <button type="button" id="btnEndDay" class="btn btn-danger btn-sm border-left" title="Günü Bitir"><i
+                            class="fas fa-flag-checkered mr-1 ml-1"></i></button>
+                    <button type="button" id="btnMinimizeApp" class="btn btn-danger btn-sm border-left"
+                        title="Simge Durumu"><i class="fas fa-window-minimize mr-1 ml-1"></i></button>
+                    <button type="button" id="btnCloseApp" class="btn btn-danger btn-sm border-left"
+                        title="Uygulamayı Kapat"><i class="fas fa-times mr-1 ml-1"></i></button>
+                </div>
+                <!-- <i href="#" id="btnCloseApp" class="btn btn-danger btn-sm"><i class="fas fa-times"></i></a> -->
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row bg-danger text-light justify-content-end">
+            <div class="col-md-12 text-right pt-1 pb-1">
+                <span><i class="fa fa-calendar-alt mr-2"></i><span id="lblTodayDate"></span></span>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="input-group input-group-sm">
+                    <input type="date" class="form-control" id="txtDate">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="btnSearchHistory"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card rounded-0 border-0">
+                    <div class="myCardHeader bg-warning">
+                        <b>Arama Sonuçları</b>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="row" id="jobListContainer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../content/js/jquery-3.4.1.min.js"></script>
+    <script>window.$ = window.jQuery = require('../content/js/jquery-3.4.1.min.js');</script>
+    <script src="../content/js/popper.min.js"></script>
+    <script src="../content/js/bootstrap.min.js"></script>
+    <script src="../content/js/history.js"></script>
+</body>
+
+</html>
